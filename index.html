@@ -1,0 +1,377 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Ung's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Tektur' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira%20Code' rel='stylesheet'>
+    <!-- https://pokepalettes.com/#gible -->
+</head>
+<body>
+    <div class="loader">
+        <img class="loaderimg" src="images/pikachurun.gif" alt="Loading...">
+    </div>
+    <div class="home-content">
+        <div id="home-content-left">
+            <div id="home-content-left-top">
+                <h1>Jonathan Ung</h1>
+                <img src="images/gible1.png" alt="gible">
+            </div> 
+            <div id="home-content-left-bottom">
+                <div id="home-description">
+                    <h2>Full Stack Developer and Full-Time Student learning AI and Data Science </h2>
+                    <a class="resume-button" href="./Resume.pdf">Resume</a>
+                </div>
+                <div class="code-window">
+                    <p id="home-line-0"></p>
+                    <p id="home-line-1"></p>
+                    <p id="home-line-2">&nbsp; &nbsp;</p>
+                    <p id="home-line-3">&nbsp; &nbsp;</p>
+                    <p id="home-line-4">&nbsp; &nbsp;</p>
+                    <p id="home-line-5">&nbsp; &nbsp;</p>
+                    <p id="home-line-6">&nbsp; &nbsp;</p>
+                    <p id="home-line-7"></p>
+                </div>
+                <div id="home-links">
+                    <img src="images/headshot.png" alt="headshot" id="headshot">
+                    <div id="home-links-icons">
+                        <a href="https://github.com/jonathanung"><img src="images/github.svg" alt="github" id="github"></a>
+                        <a href="https://www.linkedin.com/in/jonathan-ung-1193a2238/"><img src="images/linkedin.svg" alt="linkedin" id="linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="home-nav">
+            <button onClick="swapPage('home','about')"> about </button>
+            <button onClick="swapPage('home','projects')"> projects </button>
+            <button onClick="swapPage('home','contact')"> contact </button>
+            <button onClick="swapPage('home','experience')"> experience </button>
+            <footer>
+                <p>Pokémon images courtesy of The Pokémon Company. © 2023 Pokémon. © 1995-2023 Nintendo/Creatures Inc./GAME FREAK inc. </p>
+            </footer>
+        </nav>
+    </div>
+    <!-- HOME -->
+    <div class="about-content">
+        <header class="def-header">
+            <h1 class="def-title" onclick="swapPage('about','home')">Jonathan Ung</h1>
+            <img src="images/threeline.svg" alt="three line" class="three-line" onclick="toggleNav('about-nav')">
+        </header>
+        <nav class="def-nav" id="about-nav">
+            <button onClick="swapPage('about','home')"> home </button>
+            <button onClick="swapPage('about','projects')"> projects </button>
+            <button onClick="swapPage('about','contact')"> contact </button>
+            <button onClick="swapPage('about','experience')"> experience </button>
+        </nav>
+        <div class="about-content-page">
+            <div class="about-selector">
+                <button onClick="swapSelect(event, 'brief')" id="brief-btn">brief</button>
+                <button onClick="swapSelect(event, 'cooking')" id="cooking-btn"> cooking</button>
+                <button onClick="swapSelect(event, 'gaming')" id="gaming-btn"> gaming</button>
+                <button onClick="swapSelect(event, 'computers')" id="computers-btn"> computers</button>
+                <button onClick="swapSelect(event, 'coding')" id="coding-btn"> coding</button>
+            </div>
+            <div id="about-content-brief" class="abt-cts">
+                <h2 class="about-page-head">An undying ambition for a variety of skills.</h2>
+                <div class="about-content-content">
+                    <div class="about-cc-img">
+                        <img src="images/about/brief.jpg" alt="brief">
+                    </div>
+                    <div class="about-cc-bio">
+                        <p>I always put in bounds of effort in anything he is interested in deeply. Motivated to be the best version of myself possible, I put time into learning many different skills and practicing them often until I am satisfied with the outcome.</p>
+                        <p>Being able to study programming is a dream come true for me as I enjoy problem solving a lot, and programming involves a lot of it. On top of that, I am able to practice these different skills and theories often, and only get better as I practice more and more.</p>
+                        <p>Shown below are just a few of the different things that I have enjoyed practicing and mastering, whether it be purely for fun or with goals in mind as well.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="about-content-cooking" class="abt-cts">
+                <h2 class="about-page-head">Let him cook.</h2>
+                <div class="about-content-content">
+                    <div class="about-cc-img">
+                        <img src="images/about/cooking1.jpg" alt="cooking">
+                        <img src="images/about/cooking2.jpg" alt="cooking">
+                        <img src="images/about/cooking3.jpg" alt="cooking">
+                        <img src="images/about/cooking4.jpg" alt="cooking">
+                        <img src="images/about/cooking5.jpg" alt="cooking">
+                    </div>
+                    <div class="about-cc-bio">
+                        <p>I've been pretty passionate about cooking ever since I was a kid. Learning the ins and outs of our kitchen at a young age, I was constantly experimenting with cooking different cuisines and practicing different techniques.</p>
+                        <p>Becoming a Line Cook was a great experience for me since I got to learn what it looks like to master the art of a dish, and the process of constantly changing small things here and there in order to make something as perfect as possible.</p>
+                        <p>One skill that I always loved to practice was knife skills and frying skills, as I always gravitated towards the things that would push me to my limits and keep me engaged.</p>
+                        <p>Nowadays, I still cook often, and I am always looking for new recipes to try out and new techniques to learn.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="about-content-gaming" class="abt-cts">
+                <h2 class="about-page-head">Problem solver.</h2>
+                <div class="about-content-content">
+                    <div class="about-cc-img">
+                        <img src="images/about/game1.jpg" alt="game">
+                        <img src="images/about/game2.jpg" alt="game">
+                        <img src="images/about/game3.jpg" alt="game">
+                        <img src="images/about/game4.jpg" alt="game">
+                    </div>
+                    <div class="about-cc-bio">
+                        <p>Gaming was always a great casual pass time for me as a child, but I noticed that there always felt like there was more than burning time to it than meets the eye. A competitor at heart, I enjoyed being the best at the games that I played.</p>
+                        <p>Games are a big part of what makes me able to think in a logical manner quickly, since a large part of being a competitive gamer is learning and picking things up faster than the people around you in order to stay on top.</p>
+                        <p>Being able to break things down into each component and process them quickly is important as you are able to learn things much faster, which is important no matter what you are trying to learn.</p>
+                        <p>Even though games have now returned to a more casual pass time for me, the lessons I've learned from playing will never leave me.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="about-content-computers" class="abt-cts">
+                <h2 class="about-page-head">Tinker in order to learn.</h2>
+                <div class="about-content-content">
+                    <div class="about-cc-img">
+                        <img src="images/about/computer1.jpg" alt="computer">
+                        <img src="images/about/computer2.jpg" alt="computer">
+                        <img src="images/about/computer3.jpg" alt="computer">
+                        <img src="images/about/computer4.jpg" alt="computer">
+                        <img src="images/about/computer5.jpg" alt="computer">
+                        <img src="images/about/computer6.jpg" alt="computer">
+                        <img src="images/about/computer7.jpg" alt="computer">
+                    </div>
+                    <div class="about-cc-bio">
+                        <p>I've always been interested in how computers work as I have always found them to be quite abstract and fascinating. Knowing this, I took it upon myself to learn how to build a computer.</p>
+                        <p>After building my first computer, I was hooked. I loved the process of building a computer and learning about the different components and how they work together in order to make a computer run.</p>
+                        <p>I enjoyed being able to piece the parts together and watch as these different components worked and became a whole unit to create a machine capable of doing computations faster than man.</p>
+                        <p>Shown here is a gallery of the different computers I have worked on over the past few years.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="about-content-coding" class="abt-cts">
+                <h2 class="about-page-head">Head first, always.</h2>
+                <div class="about-content-content">
+                    <div class="about-cc-img">
+                        <img src="images/about/code1.png" alt="code">
+                        <img src="images/about/code2.jpg" alt="code">
+                        <img src="images/about/code3.jpg" alt="code">
+                    </div>
+                    <div class="about-cc-bio">
+                        <p>Programming. Often seen as quite a daunting skill to learn, I was able to carry over my learning techniques built from gaming and apply them right into learning code.</p>
+                        <p>Programming opened a new outlet for me to solve more practical problems in the world, and also gave me a sandbox to create things as long as I have the skills to do so. Boundless creative potential allows programming to be a great outlet for harnessing any skill learned.</p>
+                        <p>Having always taken an interest into data in the past years, I decided that this career would give me many options, while also being something that I know I will be able to practice and enjoy from anywhere, no matter the location or time.</p>
+                        <p>What separates a good programmer and an amazing programmer? Still not sure yet, but these are questions that I ask myself. I know that there are many different interesting things to learn, and I will continue to challenge myself to learn it all.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Pokémon images courtesy of The Pokémon Company.© 2023 Pokémon. © 1995-2023 Nintendo/Creatures Inc./GAME FREAK inc. </p>
+        </footer>
+    </div>
+    <!-- ABOUT -->
+    <div class="projects-content">
+        <header class="def-header">
+            <h1 class="def-title" onclick="swapPage('projects','home')">Jonathan Ung</h1>
+            <img src="images/threeline.svg" alt="three line" class="three-line" onclick="toggleNav('projects-nav')">
+        </header>
+        <nav class="def-nav" id="projects-nav">
+            <button onClick="swapPage('projects','home')"> home </button>
+            <button onClick="swapPage('projects','about')"> about </button>
+            <button onClick="swapPage('projects','contact')"> contact </button>
+            <button onClick="swapPage('projects','experience')"> experience </button>
+        </nav>
+        <div class="projects-content-page">
+            <h2 id="projects-page-head">Projects</h2>
+            <div class="project project-left">
+                <div class="project-words">
+                    <h3>sked</h3>
+                    <p>A calendar built from the ground up, sked is a calendar built to be quick to use and tracks expenses, tallying them up by month in order to make expenses easier to track. sked autheticates users using a login system, secured using cookies and JWT.</p>
+                    <ul>
+                        <li>Engineered a calendar generator to create a unique two-dimensional array for the currently displayed month using dayjs</li>
+                        <li>Implemented full CRUD functionality for users to easily personalize events and calendars </li>
+                        <li>Developed relations between events and calendars to allow for modular integration within the application</li>
+                        <li>Applied an expense attribute to allow easier tracking of finances</li>
+                        <li>Integrates sorting for events by time and calendars by creation date</li>
+                    </ul>
+                    <p>Git · JSON · Amazon Web Services (AWS) · Mongoose ODM · Dayjs · HTML5 · Cascading Style Sheets (CSS) · Node.js · JavaScript · MongoDB · Express.js · React.js</p>
+                </div>
+                <img src="images/sked.png" alt="sked" class="project-image">
+            </div>
+            <div class="project project-right">
+                <div class="project-words">
+                    <h3>Memory React</h3>
+                    <p>A game built during SFU Fall Hacks 2022, Memory React is the card game of memory built within React as its front-end interface. The game includes levels and a leaderboard to challenge players.</p>
+                    <ul>
+                        <li>Implements firebase/firestore to store a leaderboard of the top scoring players</li>
+                        <li>Developed a deck generator and stored data using states in react</li>
+                        <li>Level system ensures the game is progressive and challenging</li>
+                        <li>Integrated timer creates an arcade style experience</li>
+                    </ul>
+                    <p>Git · JSON · HTML5 · Cascading Style Sheets (CSS) · Node.js · Cloud Firestore · Firebase · JavaScript · React.js</p>
+                </div>
+                <img src="images/memoryreact.png" alt="memory react" class="project-image">
+            </div>
+            <div class="project project-left">
+                <div class="project-words">
+                    <h3>JSONLookup</h3>
+                    <p>An application used to query data from a json. Very good at finding values from keys when the json inputted is very long.</p>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="project project-right">
+                <div class="project-words">
+                    <h3>AgentTracker</h3>
+                    <p>Basic HTML website built to gain a better footing and understanding of APIs and front end.</p>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Pokémon images courtesy of The Pokémon Company.© 2023 Pokémon. © 1995-2023 Nintendo/Creatures Inc./GAME FREAK inc. </p>
+        </footer>
+    </div>
+    <!-- PROJECTS -->
+    <div class="contact-content">
+        <header class="def-header">
+            <h1 class="def-title" onclick="swapPage('contact','home')">Jonathan Ung</h1>
+            <img src="images/threeline.svg" alt="three line" class="three-line" onclick="toggleNav('contact-nav')">
+        </header>
+        <nav class="def-nav" id="contact-nav">
+            <button onClick="swapPage('contact','home')"> home </button>
+            <button onClick="swapPage('contact','about')"> about </button>
+            <button onClick="swapPage('contact','projects')"> projects </button>
+            <button onClick="swapPage('contact','experience')"> experience </button>
+        </nav>
+        <div class="contact-content-page">
+            <h2 id="contact-page-head">Contact Me!</h2>
+            <div class="contact-container">
+                <div class="contact-item">
+                    <img src="images/email.svg" alt="email">
+                    <a href="mailto:jung02@mylangara.ca" class="contact-page-link">Email</a>
+                </div>
+                <div class="contact-item">
+                    <img src="images/github.svg" alt="github">
+                    <a href="https://github.com/jonathanung" class="contact-page-link">Github</a>
+                </div>
+                <div class="contact-item">
+                    <img src="images/linkedin.svg" alt="linkedin">
+                    <a href="https://www.linkedin.com/in/jonathan-ung-1193a2238/" class="contact-page-link">LinkedIn</a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <footer>
+            <p>Pokémon images courtesy of The Pokémon Company.© 2023 Pokémon. © 1995-2023 Nintendo/Creatures Inc./GAME FREAK inc. </p>
+        </footer>
+    </div>
+    <!-- CONTACT -->
+    <div class="experience-content">
+        <header class="def-header">
+            <h1 class="def-title" onclick="swapPage('experience','home')">Jonathan Ung</h1>
+            <img src="images/threeline.svg" alt="three line" class="three-line" onclick="toggleNav('experience-nav')">
+        </header>
+        <nav class="def-nav" id="experience-nav">
+            <button onClick="swapPage('experience','home')"> home </button>
+            <button onClick="swapPage('experience','about')"> about </button>
+            <button onClick="swapPage('experience','projects')"> projects </button>
+            <button onClick="swapPage('experience','contact')"> contact </button>
+        </nav>
+        <div class="experience-content-page">
+            <div class="education-container">
+                <h3>Education</h3>
+                <div class="education">
+                    <div class="e-item">
+                        <img src="images/langara.jpg" alt="langara" class="e-logo">
+                        <div class="e-desc">
+                            <h4>Langara College</h4>
+                            <p>Associates of Science, Computing Science</p>
+                            <p>September 2021 - Present</p>
+                        </div>
+                        <div class="e-info">
+                            <ul>
+                                <li>Courses on OOP, Unix and Shell, Data Structures and Algorithms, Database Systems, Web development</li>
+                                <li>Currently spearheading the inaugural hackathon at Langara alongside the Langara Computer Science Club</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="e-item">
+                        <img src="images/codingdojo.png" alt="coding dojo" class="e-logo">
+                        <div class="e-desc">
+                            <h4>Coding Dojo</h4>
+                            <p>Full Stack Web Development</p>
+                            <p>May 2022 - August 2022</p>
+                        </div>
+                        <div class="e-info">
+                            <ul>
+                                <li>Graduated from the coding bootcamp with highest honors</li>
+                                <li>Full-Stack Web Development in Flask, MERN, and Java Spring with deployment and scaling</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-container">
+                <h3>Experience</h3>
+                <div class="e-item">
+                    <img src="images/mvpit.jpg" alt="mvpit" class="e-logo">
+                    <div class="e-desc">
+                        <h4>MVP IT Solutions</h4>
+                        <p>Software Engineering Intern</p>
+                        <p>August 2022 - November 2022</p>
+                        <p>Technologies Used:</p>
+                        <ul>
+                            <li>Dart</li>
+                            <li>Flutter</li>
+                            <li>Firebase</li>
+                            <li>Google Firestore</li>
+                            <li>OOP</li>
+                            <li>Scrum</li>
+                            <li>Agile</li>
+                            <li>APIs</li>
+                        </ul>
+                    </div>
+                    <div class="e-info">
+                            <ul>
+                                <li>Engineered functional and scalable components in the Flutter framework</li>
+                                <li>Optimized development plans during the scrum agile development</li>
+                                <li>Tested and debugged applications in collaboration with senior developers to reduce integrity errors</li>
+                                <li>Developed visual components on the front-end</li>
+                                <li>Assisted senior developers in the development of models and controllers for the back-end</li>
+                                <li>Optimized API calls to the cloud-based database to reduce resource usage and cost</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="e-item">
+                    <img src="images/katsusan.jpg" alt="katsusan" class="e-logo">
+                    <div class="e-desc">
+                        <h4>Katsu San</h4>
+                        <p>Kitchen Supervisor, Scheduling Manager and Line Cook</p>
+                        <p>August 2021 - November 2022</p>
+                    </div>
+                    <div class="e-info">
+                            <ul>
+                                <li>Created the weekly schedules for the kitchen staff</li>
+                                <li>Managed and supervised the kitchen on-site</li>
+                                <li>Ensured the quality of the product was consistently exceptional</li>
+                                <li>Conducted the training of all new kitchen staff</li>
+                                <li>Worked closely with the restaurant owner to enhance the product</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Pokémon images courtesy of The Pokémon Company.© 2023 Pokémon. © 1995-2023 Nintendo/Creatures Inc./GAME FREAK inc. </p>
+        </footer>
+    </div>
+    <!-- EXPERIENCE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
